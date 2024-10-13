@@ -1,0 +1,27 @@
+.stars {
+	position: fixed;
+	pointer-events: none; /* Курсорго тоскоол болбошу үчүн */
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.star {
+	position: absolute;
+	// width: 8px; /* Жылдыздын көлөмү */
+	// height: 8px; /* Жылдыздын көлөмү */
+	background-color: yellow; /* Жылдыздын түсү */
+	border-radius: 50%; /* Жылдыз формасы */
+	animation: twinkle 1s infinite; /* Жылдыздын анимациясы */
+}
+
+/* Жылдыздын анимациясы */
+@keyframes twinkle {
+	0%,
+	100% {
+		opacity: 0.8;
+	}
+	50% {
+		opacity: 0.2;
+	}
+}
